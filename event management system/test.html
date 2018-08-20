@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+
+.content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: black;
+}
+.centered {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+	background-color: black;
+}
+
+.centered img {
+    width: 200px;
+    border-radius: 200%;
+}
+</style>
+</head>
+<body>
+  <div class="centered">
+    <img src="Pic\woman.jpg" alt="Avatar woman">
+    <h2>Spider Girl</h2>
+    <p><font color= "white">Choose Keyword to know more information.</p>
+<button class="collapsible">How to register?</button>
+<div class="content">
+  <p>Use your Username and email to register</p>
+  </div>
+  <button class="collapsible">How to attand event?</button>
+<div class="content">
+  <p>See what even peek your interest and click interest to attand.</p>
+  </div>
+  <button class="collapsible">Can I create event?</button>
+<div class="content">
+  <p>Yes, create your event in organizer page.</p>
+  
+  <button class="collapsible">Can I create more than one event?</button>
+<div class="content">
+  <p>Yes, you can create more than one event but if you not sure about your event, advise not to create more than one</p>
+  </div>
+  <button class="collapsible">Can I attend more than one event?</button>
+<div class="content">
+  <p>You can attend more than one event but make sure the event you attend is different time</p>
+  </div>
+  
+  
+</div>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+            content.style.display = "none";
+        } else {
+            content.style.display = "block";
+        }
+    });
+}
+</script>
+</div>
+<div align="right">
+<a href="home.html" title="Back to the Home page"><img src="Pic\homebutton.gif" width="100" style="vertical-align:middle" alt="" ></a><br><b>HOME</b>
+
+</div>
+
+</body>
+</html>
